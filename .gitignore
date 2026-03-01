@@ -24,13 +24,13 @@ wheels/
 *.egg
 
 # Data
-data/raw/
-data/processed/
-*.jpg
-*.jpeg
-*.png
-*.tif
-*.bmp
+# data/raw/
+# data/processed/
+# *.jpg
+# *.jpeg
+# *.png
+# *.tif
+# *.bmp
 
 # Model checkpoints
 # checkpoints/
