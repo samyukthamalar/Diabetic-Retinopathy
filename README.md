@@ -112,38 +112,56 @@ diabetic-retinopathy-detection/
 - PyTorch 2.0+
 - CUDA (optional, for GPU acceleration)
 
-### Installation
+### Quick Start (After Cloning Repository)
 
-1. **Clone or extract the project**
+1. **Clone the repository**
    ```bash
-   cd diabetic-retinopathy-detection
+   git clone https://github.com/samyukthamalar/Diabetic-Retinopathy.git
+   cd Diabetic-Retinopathy
    ```
 
 2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
+   
+   **Note:** This will install PyTorch (CPU version), OpenCV, and other required packages. Installation takes 2-3 minutes.
 
-### Testing (Quick Demo)
+3. **Run the trained model (Recommended)**
+   ```bash
+   python test_classification.py
+   ```
+   
+   **What happens:**
+   - Loads the pre-trained model from `checkpoints/best_model_classification.pth`
+   - Tests on 231 images from the dataset
+   - Displays metrics: Accuracy (96.97%), Precision, Recall, F1, AUC
+   - Generates visualizations in `results/` folder
+   - Takes ~2 minutes on CPU
+   
+   **No training needed!** The trained model is already included in the repository.
 
-Run the trained model on test data:
-```bash
-python test_classification.py
-```
+### Training from Scratch (Optional)
 
-**Output:**
-- Displays accuracy, precision, recall, F1, AUC
-- Generates visualizations in `results/` folder
-- Takes ~2 minutes
-
-### Training (Optional)
-
-To retrain the model from scratch:
+If you want to retrain the model:
 ```bash
 python train_classification.py
 ```
 
-**Note:** Training takes 30-60 minutes on CPU, 5-10 minutes on GPU
+**Note:** 
+- Training takes 30-60 minutes on CPU, 5-10 minutes on GPU
+- Not necessary as trained model is already provided
+- Useful for experimenting with different hyperparameters
+
+### What's Included in the Repository
+
+✅ **Trained Model** - Ready to use (282 MB)  
+✅ **Complete Dataset** - All 2,607 images organized  
+✅ **Test Results** - Pre-generated metrics and visualizations  
+✅ **Source Code** - Training and testing scripts  
+✅ **Documentation** - This README with full details
+
+**You can run the project immediately after cloning!**
 
 ---
 
