@@ -33,10 +33,10 @@ data/processed/
 *.bmp
 
 # Model checkpoints
-checkpoints/
-*.pth
-*.pt
-*.h5
+# checkpoints/
+# *.pth
+# *.pt
+# *.h5
 
 # Logs
 logs/
@@ -44,8 +44,8 @@ logs/
 runs/
 
 # Results
-results/
-*.csv
+# results/
+# *.csv
 
 # IDE
 .vscode/

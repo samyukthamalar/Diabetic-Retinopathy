@@ -1,0 +1,11 @@
+TEST RESULTS - DR CLASSIFICATION
+==================================================
+Accuracy: 0.9697
+Precision: 0.9587
+Recall: 0.9831
+F1 Score: 0.9707
+AUC-ROC: 0.9877
+
+Confusion Matrix:
+[[108   5]
+ [  2 116]]
